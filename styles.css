@@ -1,0 +1,187 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+
+header .logo img {
+    width: 100%; /* รักษาอัตราส่วนภาพ */
+    height: auto; /* ปรับความสูงให้เต็มพื้นที่ของ Header */
+    object-fit: contain; /* ทำให้ภาพไม่ผิดสัดส่วน */
+}
+
+
+/* ส่วนที่ 2 เมนู */
+/* เมนู */
+.container {
+    display: flex; /*จัดเรียงเป็นแนวนอน*/
+    font-size: 14px; /*กำหนดขนาดฟอนต์ของข้อความภายในองค์ประกอบเป็น 14 พิกเซล*/
+    height: 20vh; /*กำหนดความสูงขององค์ประกอบให้เท่ากับ 20% ของความสูงหน้าจอ*/
+    position: relative; /* ใช้สำหรับจัดตำแหน่ง */
+    width: 100%; /* กำหนดความกว้างของกล่อง */
+    height: auto; /* ปรับความสูงโดยอิงอัตราส่วน */
+}
+
+navbar {
+    margin: auto; /*ตั้งค่าระยะขอบ (margin) ให้เป็น auto*/
+    padding: 1.5rem 1.5rem; /*ตั้งค่าพื้นที่ภายใน (padding) ขององค์ประกอบ*/
+    background-color: whitesmoke; /*กำหนดสีพื้นหลังขององค์ประกอบเป็นสีขาว*/
+    border-radius: 1rem; /*ทำให้มุมของกล่องโค้งมนด้วยรัศมีขนาด 1rem*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /*สร้างเงาเบลอที่ด้านล่างของกล่อง*/
+}
+.menus {
+    display:flex;
+    gap: 5rem;
+
+}
+
+.menu, .drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.drop-down {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 18px;
+    display: none;
+}
+
+.services:hover .drop-down {
+    display:block;
+}
+
+.services a {
+    display:flex;
+}
+
+.dropdown-icon {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.services:hover .dropdown-icon{
+    transform:rotate(180deg);
+}
+
+.menu a {
+    text-decoration: none;
+    color: blue;
+    font-size: 30px; /* เพิ่มขนาดตัวอักษร */
+    font-weight: bold; /* เพิ่มความหนา */
+    transition: color 0.3s ease; /* เพิ่มเอฟเฟกต์เปลี่ยนสี */
+}
+
+ .menu a:hover {
+    color: #ffcc00; /* เปลี่ยนสีเมื่อชี้เมาส์ */
+ }
+
+
+
+/* แบนเนอร์ */
+.hero {
+    background: #ADD8E6;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+    justify-content: center; /* จัดข้อความให้อยู่กึ่งกลางแนวนอน */
+}
+
+h1 {
+    text-align: center; /* จัดข้อความให้อยู่กึ่งกลาง */
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ */
+    color: #000000; /* สีข้อความ */
+}
+
+h2 {
+    text-align: center; /* จัดข้อความให้อยู่กึ่งกลาง */
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ */
+    color: #000000; /* สีข้อความ */
+}
+/* ใต้แบรนเนอร์ */
+
+.blog-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+.blog-item img {
+    width: 100%;
+}
+
+/* บริการ */
+.services {
+    background: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.service {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+}
+
+    .service i {
+        font-size: 2rem;
+        color: #0056b3;
+    }
+
+/* ส่วนติดต่อ */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+    .contact form input,
+    .contact form textarea,
+    .contact form button {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+/* ส่วนท้าย */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
