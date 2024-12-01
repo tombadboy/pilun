@@ -185,3 +185,26 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+/* Media Query สำหรับหน้าจอขนาดเล็ก (มือถือ) */
+@media screen and (max-width: 768px) {
+    header {
+        height: 50vh; /* ลดความสูงของ Header */
+    }
+
+    .container {
+        flex-direction: column; /* จัดเรียงเป็นแนวตั้ง */
+        align-items: center;
+    }
+
+    .menus {
+        gap: 1rem; /* ลดระยะห่างระหว่างเมนู */
+    }
+
+    .menu a {
+        font-size: 18px; /* ลดขนาดตัวอักษรให้พอดีกับมือถือ */
+    }
+
+    navbar {
+        padding: 1rem; /* ลด padding */
+    }
+}
