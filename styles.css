@@ -29,6 +29,15 @@ header  {
 }
 
 /* ส่วนที่ 2 เมนู */
+
+.contact{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.nav-con{
+    display: flex;
+    justify-content: space-between;
+}
 /* เมนู */
 .container {
     display: flex; /*จัดเรียงเป็นแนวนอน*/
@@ -134,15 +143,10 @@ h2 {
 }
 /* ใต้แบรนเนอร์ */
 
-.blog-con {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 2rem;
+.blog-btn{
+    font-size: 50px;
+    color: blue;
 }
-.blog-item img {
-    width: 100%;
-}
-
 /* บริการ */
 .services {
     background: #f9f9f9;
