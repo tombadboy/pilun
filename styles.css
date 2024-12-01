@@ -19,6 +19,14 @@ header .logo img {
     object-fit: contain; /* ทำให้ภาพไม่ผิดสัดส่วน */
 }
 
+header  {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/test2.jpg');
+    height: 100vh; /* ยังคงเต็มความสูงของหน้าจอ */
+    background-size: auto; /* ใช้ขนาดดั้งเดิมของรูป */
+    background-repeat: no-repeat; /* ป้องกันการซ้ำของภาพ */
+    background-position: center; /* วางตำแหน่งรูปตรงกลาง */
+    min-height: 100px;
+}
 
 /* ส่วนที่ 2 เมนู */
 /* เมนู */
@@ -185,6 +193,7 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
 /* Media Query สำหรับหน้าจอขนาดเล็ก (มือถือ) */
 @media screen and (max-width: 768px) {
     header {
